@@ -7,7 +7,7 @@
 		<?php wp_head(); ?>
 	</head>
 	<body>
-		
+		                                                                                       
 		<div class = "navbar navbar-inverse navbar-static-top">
 			<div class = "container">
 				
@@ -33,6 +33,8 @@
         			?>
 					
 				</div>
-				
 			</div>
 		</div>
+		<header class="image-bg-fluid-height">
+        	<h1>PEOPLE, PLANET, PROFIT</h1>
+    	</header>
