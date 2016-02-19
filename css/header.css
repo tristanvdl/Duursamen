@@ -1,0 +1,108 @@
+html {
+    overflow-x: hidden;
+}
+
+@font-face {
+    font-family: myFirstFont;
+    src: url('../fonts/BebasNeue.otf');
+}
+
+@font-face {
+    font-family: PlatteTekst;
+    src: url('../fonts/FiraSans-Light.otf');
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #ED6C33;
+    font-family: myFirstFont;
+    font-size: 22px;
+}
+
+#menu-item-47 a,
+#menu-item-48 a,
+#menu-item-49 a {
+    font-family: myFirstFont;
+    font-size: 20px;
+    color: #ED6C33;
+}
+
+.navbar>.container .navbar-brand,
+.navbar>.container-fluid .navbar-brand {
+    font-family: myFirstFont;
+    font-size: 25px;
+    color: #ED6C33;
+}
+
+.navbar-nav {
+    float: right;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: #ED6C33;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #ED6C33;
+}
+
+
+/*  ---------------------- Telefoon ------------------- */
+
+.header {
+    height: 250px;
+    padding-top: 100px;
+    text-align: center;
+    background-image: url('../images/header-mobile.jpg');
+    background-size: cover;
+}
+
+.navbar-nav {
+    float: left;
+}
+
+h1 {
+    font-family: myFirstFont;
+    font-size: 50px;
+    color: #31525A;
+}
+
+h2 {
+    color: #31525A;
+}
+
+h3 {
+    color: #ED6C33;
+    font-size: 30px;
+}
+
+
+/*  ---------------------- Tablets ------------------- */
+
+@media only screen and (min-width: 768px) {
+    .header {
+        height: 400px;
+        padding-top: 190px;
+        background-image: url('../images/header-tablet.jpg');
+    }
+    .navbar-nav {
+        float: right;
+    }
+    h1 {
+        font-family: myFirstFont;
+        font-size: 70px;
+    }
+}
+
+
+/*  ---------------------- Desktop ------------------- */
+
+@media only screen and (min-width: 1200px) {
+    .header {
+        height: 450px;
+        padding-top: 190px;
+        background-image: url('../images/header-desktop.jpg');
+    }
+    h1 {
+        font-size: 100px;
+    }
+}
