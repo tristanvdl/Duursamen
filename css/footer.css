@@ -3,6 +3,9 @@
     padding-top: 20px;
     text-align: center;
     background: #31525A;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
 
 h2.logo {
@@ -160,10 +163,10 @@ p.copyright {
         list-style-type: none;
         color: #ED6C33;
     }
-    a {
+    ul.contact a {
         color: #ED6C33;
     }
-    a:hover {
+    ul.contact a:hover {
         color: black;
         text-decoration: none;
     }

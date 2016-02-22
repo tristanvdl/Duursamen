@@ -1,0 +1,27 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url('../fonts/BebasNeue.otf');
+}
+
+@font-face {
+    font-family: PlatteTekst;
+    src: url('../fonts/FiraSans-Light.otf');
+}
+
+@font-face {
+    font-family: OnderKop;
+    src: url('../fonts/DroidSans.ttf');
+}
+
+
+h1	{
+	font-family: myFirstFont;
+}
+
+h2, h3	{
+	font-family: OnderKop;
+}
+
+p {
+	font-family: PlatteTekst;
+}

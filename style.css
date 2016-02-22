@@ -8,10 +8,14 @@ Author URI: nothing yet
 */
 
 
+@import url('css/fonts.css');
 @import url('css/bootstrap.min.css');
-@import url('css/header.css');
 @import url('css/scrolling-nav.css');
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css');
+@import url('css/header.css');
+@import url('css/blog.css');
 @import url('css/footer.css');
+
 
 
 

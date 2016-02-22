@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title><?php wp_title(' | VerduurSamen ', true, 'right'); ?></title>
+		<title><?php bloginfo('name'); ?> | <?php is_front_page() ? bloginfo('description') : wp_title(''); ?></title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link href = "<?php bloginfo('stylesheet_url'); ?>" rel = "stylesheet">
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 		<?php wp_head(); ?>
 	</head>
+
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 	   <!-- Navigatie -->
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -43,10 +45,13 @@
     <section id="intro" class="header">
         <div class="container">
             <div class="row">
-                    <h1><?php wp_title('',true,'right'); ?></h1>
+                
+                    <h1><?php the_title(); ?></h1>
                     <?php if(is_page('home')){
                     	echo "<h2>People, Planet, Profit</h2>";
-                    	} ?>
+                    	} 
+                    ?>
+                
             </div>
         </div>
     </section>		                                                                                       
