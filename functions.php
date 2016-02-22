@@ -4,4 +4,4 @@ require_once('wp_bootstrap_navwalker.php');
 			'primary' => __('Primary Menu', 'verduursamen')
 		) );
    
- add_theme_support( 'post-thumbnails' ); 
+add_theme_support( 'post-thumbnails' ); 
