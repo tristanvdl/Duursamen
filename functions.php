@@ -5,3 +5,4 @@ require_once('wp_bootstrap_navwalker.php');
 		) );
    
 add_theme_support( 'post-thumbnails' ); 
+

@@ -2,9 +2,20 @@
     margin-bottom: 30px;
 }
 
+
 .post {
     background-color: #A5F2F3;
     height: 340px;
+    padding: 20px;
+    font-size: 19px;
+    transition: background-color 1s;
+    margin-bottom: 30px;
+}
+
+.recentPosts {
+    background-color: #A5F2F3;
+    width: 100%;
+    height: auto;
     padding: 20px;
     font-size: 19px;
     transition: background-color 1s
@@ -28,7 +39,7 @@
 
 .postThumbnail img {
     width: 100%;
-    height: auto;
+    height: 100%;
 }
 
 .postTitle a {
@@ -44,35 +55,18 @@
     margin-top: -10px;
 }
 
-.poster {
-    margin-top: -172px;
-    padding: 23px;
-    width: 258px;
-    font-size: 17px;
-    float: left;
-}
-
-.posterInfo {
-    float: right;
-    font-family: OnderKop;
-}
-
-.posterImage img {
-    border-radius: 50%;
-}
-
 @media only screen and (min-width: 991px) and (max-width: 1200px) {
     .post {
         font-size: 16px;
     }
     .postThumbnail img {
-        max-height: 164px;
+       
     }
 }
 
 @media only screen and (min-width: 767px) and (max-width: 991px) {
     .postThumbnail img {
-        max-height: 193px;
+        
     }
     .post {
         font-size: 16px;
@@ -81,10 +75,16 @@
 }
 
 @media only screen and (min-width: 0px) and (max-width: 400px) {
-    
     .post {
-        font-size: 155px;
+        font-size: 15px;
         height: 310px;
+    }
+}
+
+@media only screen and (min-width: 1081px) and (max-width: 1290px) {
+    .post {
+        font-size: 18px;
+        height: 360px;
     }
 }
 

@@ -1,0 +1,123 @@
+.diensten {
+    text-align: center;
+}
+
+.diensten .row h1 {
+    font-size: 35px;
+    color: #ED6C33;
+}
+
+/* tablet & desktop */
+@media only screen and (min-width: 768px) {
+    .workshops, .presentaties, .onderzoek {
+        width: 29%;
+        float: left;
+        height: 400px;
+        margin: 2%;
+        position: relative;
+    }
+    
+    .diensten .row h1 {
+        padding: 10px; 
+    }
+    
+    .workshops { 
+        background-image: url(); 
+        background-repeat: no-repeat;
+        max-width:100%;
+        max-height:100%;
+    }
+    .presentaties { 
+        background-image: url();
+        background-repeat: no-repeat;
+    }
+    .onderzoek { 
+        background-image: url(); 
+        background-repeat: no-repeat;
+    }
+
+    .workshops a, 
+    .presentaties a, 
+    .onderzoek a {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        text-decoration: none;
+        z-index: 10;
+        background-color: #FFF;
+        opacity: 0;
+        filter: alpha(opacity=1);
+    }
+    
+    .content_diensten {
+        height: 90px;
+        background-color: rgba(186,228,165,0.9);
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+    }
+    
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    .onderzoek .content_diensten h1 {
+        display: table-cell;
+        vertical-align: middle;
+    }
+    
+    .onderzoek {
+        display: block;
+    }
+    
+    .workshops, .presentaties, .onderzoek {
+        height: 360px;
+    }
+}
+
+/* smartphones landscape */
+@media only screen and (max-width: 767px) {
+    .diensten h1 {
+       padding-top: 10px; 
+    }
+    
+    .diensten .row {
+        padding: 20px;
+    }
+    
+    .workshops, .presentaties, .onderzoek {
+        width: 100%;
+        float: left;
+        height: 100%;
+        margin-top: 10px;
+        background-color: #bae4a5;
+    }
+}
+
+
+/* porttrait smartphones */
+@media only screen and (max-width: 767px) and (orientation: portrait) {
+    .diensten .row h1 { 
+        font-size: 30px;
+        padding-top: 10px;
+    }
+    
+    .diensten .row {
+        padding: 20px;
+    }
+    
+    
+    .workshops, 
+    .presentaties, 
+    .onderzoek {
+        margin-top: 10px;
+        width: 100%;
+        float: left;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #bae4a5;
+    }   
+}
