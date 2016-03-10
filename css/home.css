@@ -1,115 +1,30 @@
-@font-face {
-    font-family: myFirstFont;
-    src: url(../fonts/BebasNeue.otf);
-}
-
-@font-face {
-    font-family: PlatteTekst;
-    src: url(../fonts/FiraSans-Light.otf);
-}
-
-.navbar-default .navbar-nav>li>a {
-    color: #ED6C33;
-    font-family: myFirstFont;
-    font-size: 22px;
-}
-
-.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
-    font-family: myFirstFont;
-    font-size: 25px;
-    color: #ED6C33;
-    
-}
-
-.navbar-nav {
-    float: right;
-}
-
-.navbar-default .navbar-toggle {
-    border-color: #ED6C33;
-}
-
-
-.navbar-default .navbar-toggle .icon-bar {
-    background-color: #ED6C33;
-
-}
-
-
-/*  ---------------------- Voor kleinere telefoons ------------------- */
-
-
-.header {
-    height: 250px;
-    padding-top: 100px;
-    text-align: center;
-    background-image: url(../images/header-mobile.jpg);
-    background-size: cover;
-}
-
 .content-home {
     height: auto;
     text-align: center;
 }
-
-.footer {
-    height: 450px;
-    padding-top: 20px;
-    text-align: center;
-    background: #31525A;
-}
-
-.navbar-nav {
-    float: left;
-}
-
-h1 {
-    font-family: myFirstFont;
-    font-size: 50px;
-    color: #31525A;
-}
-
-h2 {
-    color: #31525A;
-}
-
-
 
 hr.watwijdoen {
     border-top: 1px solid black;
     width: 300px;
 }
 
- h2.logo {
-        font-family: myFirstFont;
-        font-size: 50px;
-        color: #ED6C33;
-        text-align: center;
-    }
-
-h2.intro {
+h2.intro,
+h2.intro p {
     font-family: myFirstFont;
     padding-top: 20px;
     padding-bottom: 20px;
-    font-size: 30px;
     color: #ED6C33;
+    text-align: center;
 }
 
-h3 {
-    color: #ED6C33;
-    font-size: 30px;
-}
-
-p {
-    font-family: PlatteTekst;
-    font-size: 18px;
-}
-
-#onderzoek, #presenatie {
+#onderzoek,
+#presenatie {
     margin-bottom: 60px;
 }
 
-
+.homeText {
+    font-size: 18px;
+}
 
 img.icons {
     padding-top: 40px;
@@ -127,7 +42,6 @@ ul.contact {
 
 /* ----- Aanmeldformulier ----- */
 
-
 .btn-info {
     background-color: #ED6C33;
     border-color: #ED6C33;
@@ -144,20 +58,18 @@ ul.contact {
     border-color: #d5612d;
 }
 
-
-
 input.form-control {
     margin-top: 20px;
 }
 
 .btn-default {
-      background-color: #ED6C33;
+    background-color: #ED6C33;
     font-family: PlatteTekst;
     color: white;
 }
 
 .btn-default:hover {
-      background-color: #d5612d;
+    background-color: #d5612d;
     font-family: PlatteTekst;
     color: white;
 }
@@ -166,7 +78,6 @@ button.btn.btn-default {
     margin-top: 20px;
     width: 150px;
     height: 40px;
-    
 }
 
 input.form-control {
@@ -177,222 +88,5 @@ h4.modal-title {
     font-family: PlatteTekst;
 }
 
+
 /* ------ Einde aanmeldformulier ------ */
-
-
-
-.sitemap {
-       display: none;
-    }
-
-p.copyright {
-    font-family: PlatteTekst;
-    color: #ED6C33;
-    margin-top: 50px;
-}
-
-
-.social {
-  margin: 0 auto;
-  padding-top: 20px;
-  width: 300px;
-    float: center;
-    
-    
-}
-
-.social ul {
-    margin-left: 30px;
-    
-}
-
-.social ul li {
-  background: white;
-  border-radius: 50%;
-  float: left;
-  height: 50px;
-  list-style: none;
-  margin: 0 10px;
-  width: 50px;
-}
-.social ul li:before {
-  font: 500 1em/50px "FontAwesome";
-}
-.social ul li:hover {
-  animation: transform .5s forwards, shadow 1s forwards;
-  -ms-animation: transform .5s forwards, shadow 1s forwards;
-  -moz-animation: transform .5s forwards, shadow 1s forwards;
-  -webkit-animation: transform .5s forwards, shadow 1s forwards;
-}
-.social ul .facebook:hover {
-  background: white;
-}
-.social ul .facebook:before {
-  color: #ED6C33;
-  content: '\f09a';
-  display: block;
-  line-height: 50px;
-  text-align: center;
-}
-.social ul .linkedin:hover {
-  background: white;
-}
-.social ul .linkedin:before {
-  color: #ED6C33;
-    content: '\f08c';
-  display: block;
-  line-height: 50px;
-  text-align: center;
-}
-
-.social ul .instagram:hover {
-  background: white;
-}
-.social ul .instagram:before {
-  color: #ED6C33;
-  content: '\f16d';
-  display: block;
-  line-height: 50px;
-  text-align: center;
-}
-
-@-webkit-keyframes transform {
-  from {
-    transform: translateY(0);
-    -webkit-transform: translateY(0);
-    -moz-transform: translateY(0);
-    -ms-transform: translateY(0);
-  }
-  to {
-    transform: translateY(-10px);
-    -webkit-transform: translateY(-10px);
-    -moz-transform: translateY(-10px);
-    -ms-transform: translateY(-10px);
-  }
-}
-@keyframes transform {
-  from {
-    transform: translateY(0);
-    -webkit-transform: translateY(0);
-    -moz-transform: translateY(0);
-    -ms-transform: translateY(0);
-  }
-  to {
-    transform: translateY(-10px);
-    -webkit-transform: translateY(-10px);
-    -moz-transform: translateY(-10px);
-    -ms-transform: translateY(-10px);
-  }
-}
-@-webkit-keyframes shadow {
-  from {
-    box-shadow: 0 0 0 rgba(255, 255, 250, 0.9);
-  }
-  to {
-    box-shadow: 0 0 0 10px transparent;
-  }
-}
-@keyframes shadow {
-  from {
-    box-shadow: 0 0 0 rgba(255, 255, 250, 0.9);
-  }
-  to {
-    box-shadow: 0 0 0 10px transparent;
-  }
-}
-
-
-
-    
-/*  ---------------------- Tablets ------------------- */
-
-
-@media only screen and (min-width: 768px) {
-
-
-    
-    
-    .header {
-    height: 400px;
-    padding-top: 190px;
-    background-image: url(../images/header-tablet.jpg);
-}  
-    
-    
-    
-    .footer {
-        text-align: left;
-        height: 400px;
-        padding-top: 50px;
-    }
-
-    .navbar-nav {
-    float: right;
-}
-    
-    h1 {
-    font-family: myFirstFont;
-    font-size: 70px;
-}
-    
-    p.copyright {
-        text-align: center;
-    }
-    
-    
-    .sitemap {
-        margin-left: 250px;
-        margin-top: -160px;
-        display:block!important;
-    }
-   
-    ul.inspringen {
-        list-style-type: none;
-        color: #ED6C33;
-    }
-    
-    a {
-        color: #ED6C33;
-    }
-    
-    a:hover {
-        color: black;
-        text-decoration: none;
-    }
-    
-    .social {
-        float: right;
-        margin-top: -220px;
-    }
-
-    
-
-    
-
-    
-    
-
-}
-
-
-/*  ---------------------- Desktop ------------------- */
-
-
-@media only screen and (min-width: 1200px) {
-  
-
-    
-     .header {
-    height: 450px;
-    padding-top: 190px;
-    background-image: url(../images/header-desktop.jpg);
-}  
-    
-    h1 {
-        font-size: 100px;
-    }
-
-    
-
-}
-

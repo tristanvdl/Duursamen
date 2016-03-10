@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-      <sectionclass="content-home">
+      <section class="content-home">
          <div class="container">
             <div class="row">
                <div class="col-lg-12">
@@ -8,10 +8,15 @@
                      Wat wij doen 
                      <hr class="watwijdoen">
                   </h2>
-                  <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.”</p>
-                  <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.”
-                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.”
-                  </p>
+                  <div class="homeText">
+                     <p><?php
+                      while ( have_posts() ) : the_post(); ?>
+                              <?php the_content(); ?> 
+                      <?php
+                      endwhile; 
+                      wp_reset_query(); 
+                      ?></p>
+                  </div>
                </div>
             </div>
             <div class="col-sm-6">

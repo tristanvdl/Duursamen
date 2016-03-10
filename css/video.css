@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header {
+    width: 100%;
+    margin: 0 auto;
+}
+
+section.section-first {
+    height: 100vh;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+section.section-first > .text {
+    position: relative;
+    top: 15%;
+    transform: translateY(-50%);
+}
+
+section.section-first > .text > h1 {
+    font-size: 60px;
+    color: #fff;
+    border-bottom: 0;
+    margin: 0 0 10px;
+}
+
+section.section-first > .text > h2 {
+    color: #fff;
+    margin: 0;
+}
+
+#main {
+    text-align: center;
+}
+
+.tekst {
+    margin: 0 auto;
+}
+
+#more {
+    margin: 20px auto 48px;
+}
+
+@media only screen and (max-width: 767px) {
+    section.section-first > .text > h1 {
+        margin: 70px 0 10px;
+    }
+}

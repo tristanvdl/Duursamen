@@ -41,20 +41,21 @@
             </div>
             <!-- /Einde .container -->
         </nav>
-
-        <!--  Header  -->
-        <section id="intro" class="header">
-            <div class="container">
-                <div class="row">
-                    
-                        <h1><?php the_title(); ?></h1>
-                        <?php if(is_page('home')){
-                        	echo "<h2>People, Planet, Profit</h2>";
-                        	} 
-                        ?>
-                    
+            <?php if(is_page('home')){ ?>
+            <section class="headerHome section-first" data-vidbg-bg="mp4: <?php bloginfo('stylesheet_directory'); ?>/video/div-video.mp4, webm:  <?php bloginfo('stylesheet_directory'); ?>/video/div-video.webm, poster:  <?php bloginfo('stylesheet_directory'); ?>/images/header-tablet.jpg" data-vidbg-options="loop: true, muted: true, overlay: false">
+                <div class="text">
+                    <h1><?php the_title(); ?></h1>
+                    <h2>People | Planet | Profit</h2>
+                    </div>
+             </section>
+            <?php } else { ?>
+            <section id="intro" class="header">
+                <div class="container">
+                    <div class="row">
+                        <h1><?php the_title(); ?></h1>                  
+                    </div>
                 </div>
-            </div>
-        </section>	
-    </div>
-    <div id="content">                                                                                       
+            </section>  
+            <?php }  ?>
+    </div> 
+    <div id=\"content\"> 

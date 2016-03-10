@@ -73,25 +73,13 @@ p.copyright {
     text-align: center;
 }
 
-.social ul .twitter:hover {
+.social ul .linkedin:hover {
     background: white;
 }
 
-.social ul .twitter:before {
+.social ul .linkedin:before {
     color: #ED6C33;
-    content: '\f099';
-    display: block;
-    line-height: 50px;
-    text-align: center;
-}
-
-.social ul .instagram:hover {
-    background: white;
-}
-
-.social ul .instagram:before {
-    color: #ED6C33;
-    content: '\f16d';
+    content: '\f08c';
     display: block;
     line-height: 50px;
     text-align: center;

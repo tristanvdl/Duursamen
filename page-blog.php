@@ -6,7 +6,7 @@ get_header();
 				<section class="blog">
 					<div class="container-fluid">
 						<div class="row">
-						<div class="col-xl-3 col-sm-6 col-xs-12 grid-item scroll">
+						<div class="col-lg-3 col-sm-6 col-xs-12 grid-item scroll">
 							<div class="recentPosts">
 								<div class="recentPostsTitle">Recente Posts</div>
 								<ul class="nav-stacked">
@@ -25,7 +25,7 @@ if(have_posts()):
 	query_posts("cat=1&posts_per_page=".get_option("posts_per_page")."&paged=" . $paged);
 while(have_posts()) : the_post();  
 ?>
-							<div class="col-xl-3  col-sm-6 col-lg-4 col-xs-12 grid-item">
+							<div class="col-sm-6 col-lg-3 col-xs-12 grid-item">
 								<div class="postThumbnail">
 								<?php the_post_thumbnail(); 
 								 ?>	

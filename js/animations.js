@@ -8,22 +8,21 @@ $(window).scroll(function() {
 				$(this).addClass(animation);
 			}
 		});
-		console.log('scroll');
 	});
 
 }
 
 
 /* -------- Home Pagina --------- */
-effects('#presentatie',500, 'slideRight');
-effects('#onderzoek',500, 'slideLeft');
+effects('#presentatie',700, 'slideRight');
+effects('#onderzoek',700, 'slideLeft');
 
 
 /* -------- Over Ons Pagina ------ */
 effects('#tekst',500, 'slideUp');
-effects('#foto2',450, 'slideUp');
+effects('#foto2',500, 'slideUp');
 effects('#foto',400, 'bigEntrance');
-effects('#tekst2',300, 'bigEntrance');
+effects('#tekst2',500, 'bigEntrance');
 
 
 

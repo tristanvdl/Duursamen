@@ -39,13 +39,21 @@
 
 /*  ---------------------- Telefoon ------------------- */
 
+.headerHome {
+    height: 250px;
+    padding-top: 100px;
+    text-align: center;
+    background-size: cover;
+    margin-bottom: 30px;
+}
+
 .header {
     height: 250px;
     padding-top: 100px;
     text-align: center;
-    background-image: url('../images/header-mobile.jpg');
     background-size: cover;
     margin-bottom: 30px;
+    background-image: url('../images/header-desktop.jpg');
 }
 
 .navbar-nav {
@@ -71,11 +79,16 @@ h3 {
 /*  ---------------------- Tablets ------------------- */
 
 @media only screen and (min-width: 768px) {
+    .headerHome {
+        height: 400px;
+        padding-top: 190px;
+        margin-bottom: 30px;
+    }
     .header {
         height: 400px;
         padding-top: 190px;
-        background-image: url('../images/header-tablet.jpg');
         margin-bottom: 30px;
+        background-image: url('../images/header-desktop.jpg');
     }
     .navbar-nav {
         float: right;
@@ -90,10 +103,15 @@ h3 {
 /*  ---------------------- Desktop ------------------- */
 
 @media only screen and (min-width: 1200px) {
-    .header {
+    .headerHome {
         height: 450px;
         padding-top: 190px;
+        margin-bottom: 30px;
+    }
+    .header {
+        height: 450px;
         background-image: url('../images/header-desktop.jpg');
+        padding-top: 190px;
         margin-bottom: 30px;
     }
     h1 {
