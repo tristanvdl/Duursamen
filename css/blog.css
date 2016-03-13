@@ -8,26 +8,55 @@ article {
     background-color: #A5F2F3;
     padding: 20px;
     font-size: 19px;
-    transition: background-color 1s;
     margin-bottom: 30px;
+}
+
+.date {
+    padding: 20px;
+    font-size: 19px;
+    margin-top: -80px;
+}
+
+.nextPage a {
+    text-decoration: none;
+    color: #ED6C33;
+    font-size: 33px;
+    font-family: myFirstFont; 
+}
+
+.prevPage a {
+    text-decoration: none;
+    color: #ED6C33;
+    float: right;
+    font-size: 33px;
+    font-family: myFirstFont; 
+}
+
+.recentPostThumbnail img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
 }
 
 .recentPosts {
     background-color: #FF9B4E;
     width: 100%;
     padding: 20px;
-    font-size: 19px;
     margin-top: 10px;
     margin-bottom: 30px;
 }
 
-.recentLinks ul li a {
+.recentLinks a,
+.recentLinks ul {
+    list-style: none;
     text-decoration: none;
+    font-size: 25px;
 }
 
 .recentPostsTitle {
     font-size: 26px;
     text-align: center;
+    color: black;
 }
 
 .post {
@@ -44,7 +73,7 @@ article {
 }
 
 .postTitle a {
-    color: black;
+    color: #333;
     text-decoration: none;
 }
 

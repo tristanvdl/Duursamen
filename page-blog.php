@@ -6,20 +6,6 @@ get_header();
 				<section class="blog">
 					<div class="container-fluid">
 						<div class="row">
-						<div class="col-lg-3 col-sm-6 col-xs-12">
-							<div class="recentPosts">
-								<div class="recentPostsTitle"><h2>Recente Posts</h2></div>
-								<div class="recentLinks">
-									<ul class="nav-stacked">
-									<?php 	
-									$recent_posts = wp_get_recent_posts();
-									foreach( $recent_posts as $recent ){
-									echo '<li><a href="' . get_permalink($recent["ID"]) . '">' .   $recent["post_title"].'</a> </li> ';
-									} ?>
-									</ul>
-								</div> 
-							</div>
-						</div>
 <?php 
 if(have_posts()):
 	$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
@@ -36,6 +22,10 @@ while(have_posts()) : the_post();
 									<h2 class="postTitle hvr-buzz-out"><a href="<?php the_permalink(); ?>"><?php the_title();?></a></h2>
 									<span><?php the_excerpt(); ?></span> 
 								</article>
+								<div class="date">
+									<?php the_time(get_option('date_format')); ?>
+								</div>
+
 							</div>
 <?php 		
 endwhile; wp_reset_query() 
@@ -45,10 +35,10 @@ endwhile; wp_reset_query()
 
 						<div class="row">
 							<div class="col-md-6">
-								<div class="nav-previous alignleft"><?php next_posts_link('Older Entries »', $the_query->max_num_pages); ?></div>
+								<div class="nav-next nextPage hvr-bob"><?php next_posts_link('< Oudere Posts', $the_query->max_num_pages); ?></div>
 							</div>
 							<div class="col-md-6">
-								<div class="nav-next alignright"><?php previous_posts_link('newer Entries »', 0); ?></div>
+								<div class="nav-next prevPage hvr-bob"><?php previous_posts_link('Nieuwere Posts »', 0); ?></div>
 							</div>
 						</div>
 					</div>
