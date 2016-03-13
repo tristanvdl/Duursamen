@@ -8,15 +8,21 @@
                      Wat wij doen 
                      <hr class="watwijdoen">
                   </h2>
-                  <div class="homeText">
+                  <div class="homeText col-md-6">
                      <p><?php
                       while ( have_posts() ) : the_post(); ?>
-                              <?php the_content(); ?> 
-                      <?php
+                              <?php echo get_post_meta($post->ID, 'quote1', true); ?> 
+                     </p>
+                  </div>
+                  <div class="homeText col-md-6">
+                        <p>
+                        <?php echo get_post_meta($post->ID, 'quote2', true); ?> 
+                        </p>
+                  </div>
+                   <?php
                       endwhile; 
                       wp_reset_query(); 
-                      ?></p>
-                  </div>
+                      ?>
                </div>
             </div>
             <div class="col-sm-6">

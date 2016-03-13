@@ -58,6 +58,7 @@
 <script src = "<?php bloginfo('template_url'); ?>/js/animations.js"></script>
 <script src = "<?php bloginfo('template_url'); ?>/js/video.js"></script>
 <script src = "<?php bloginfo('template_url'); ?>/js/vidbg.js"></script>
+<script src = "<?php bloginfo('template_url'); ?>/js/equal-height.js"></script>
 <?php wp_footer(); ?>
 </div>
 </body>

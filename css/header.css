@@ -1,8 +1,26 @@
+
+body {
+    overflow-x: hidden;
+}
 .navbar-default .navbar-nav>li>a {
     color: #ED6C33;
     font-family: myFirstFont;
     font-size: 22px;
 }
+
+.logoHeaderScroll img {
+    width: 167px;
+    height: 50px;
+    margin-top: -15px;
+}
+
+.logoHeader img {
+    width: 167px;
+    height: 50px;
+    margin-top: -15px;
+}
+
+
 
 #menu-item-47 a,
 #menu-item-48 a,
@@ -60,15 +78,6 @@
     float: left;
 }
 
-h1 {
-    font-family: myFirstFont;
-    font-size: 50px;
-    color: #31525A;
-}
-
-h2 {
-    color: #31525A;
-}
 
 h3 {
     color: #ED6C33;
@@ -79,6 +88,17 @@ h3 {
 /*  ---------------------- Tablets ------------------- */
 
 @media only screen and (min-width: 768px) {
+    .logoHeader img {
+        width: 333px;
+        height: 100px;
+        margin-top: -40px;
+    }
+    .logoHeaderScroll img {
+        width: 210px;
+        height: 70px;
+        margin-top: -25px;
+    }
+    
     .headerHome {
         height: 400px;
         padding-top: 190px;
@@ -103,6 +123,17 @@ h3 {
 /*  ---------------------- Desktop ------------------- */
 
 @media only screen and (min-width: 1200px) {
+    .logoHeader img {
+        width: 333px;
+        height: 100px;
+        margin-top: -40px;
+    }
+     .logoHeaderScroll img {
+        width: 210px;
+        height: 70px;
+        margin-top: -25px;
+    }
+
     .headerHome {
         height: 450px;
         padding-top: 190px;

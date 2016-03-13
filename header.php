@@ -20,7 +20,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand page-scroll" href="http://school.tristanvdl.nl/duursamen/wordpress/home/">VerduurSamen</a>
+                    <a class="navbar-brand page-scroll logoHeader" href="http://school.tristanvdl.nl/duursamen/wordpress/home/"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/imgpsh_fullsize.png"></a>
                 </div>
                 
                 <div class="collapse navbar-collapse navbar-ex1-collapse">
@@ -44,8 +44,7 @@
             <?php if(is_page('home')){ ?>
             <section class="headerHome section-first" data-vidbg-bg="mp4: <?php bloginfo('stylesheet_directory'); ?>/video/div-video.mp4, webm:  <?php bloginfo('stylesheet_directory'); ?>/video/div-video.webm, poster:  <?php bloginfo('stylesheet_directory'); ?>/images/header-tablet.jpg" data-vidbg-options="loop: true, muted: true, overlay: false">
                 <div class="text">
-                    <h1><?php the_title(); ?></h1>
-                    <h2>People | Planet | Profit</h2>
+                    <img src="<?php bloginfo('stylesheet_directory'); ?>/images/imgpsh_fullsize_white.png">
                     </div>
              </section>
             <?php } else { ?>
@@ -58,4 +57,4 @@
             </section>  
             <?php }  ?>
     </div> 
-    <div id=\"content\"> 
+    <div id="content"> 

@@ -6,16 +6,18 @@ get_header();
 				<section class="blog">
 					<div class="container-fluid">
 						<div class="row">
-						<div class="col-lg-3 col-sm-6 col-xs-12 grid-item scroll">
+						<div class="col-lg-3 col-sm-6 col-xs-12">
 							<div class="recentPosts">
-								<div class="recentPostsTitle">Recente Posts</div>
-								<ul class="nav-stacked">
-								<?php 	
-								$recent_posts = wp_get_recent_posts();
-								foreach( $recent_posts as $recent ){
-								echo '<li><a href="' . get_permalink($recent["ID"]) . '">' .   $recent["post_title"].'</a> </li> ';
-								} ?>
-								</ul> 
+								<div class="recentPostsTitle"><h2>Recente Posts</h2></div>
+								<div class="recentLinks">
+									<ul class="nav-stacked">
+									<?php 	
+									$recent_posts = wp_get_recent_posts();
+									foreach( $recent_posts as $recent ){
+									echo '<li><a href="' . get_permalink($recent["ID"]) . '">' .   $recent["post_title"].'</a> </li> ';
+									} ?>
+									</ul>
+								</div> 
 							</div>
 						</div>
 <?php 
@@ -25,15 +27,15 @@ if(have_posts()):
 	query_posts("cat=1&posts_per_page=".get_option("posts_per_page")."&paged=" . $paged);
 while(have_posts()) : the_post();  
 ?>
-							<div class="col-sm-6 col-lg-3 col-xs-12 grid-item">
+							<div class="col-sm-6 col-lg-3 col-xs-12 grid-item hvr-grow">
 								<div class="postThumbnail">
 								<?php the_post_thumbnail(); 
 								 ?>	
 								</div>
-								<div class="post">
-									<h2 class="postTitle"><a href="<?php the_permalink(); ?>"><?php the_title();?></a></h2>
+								<article class="post">
+									<h2 class="postTitle hvr-buzz-out"><a href="<?php the_permalink(); ?>"><?php the_title();?></a></h2>
 									<span><?php the_excerpt(); ?></span> 
-								</div>
+								</article>
 							</div>
 <?php 		
 endwhile; wp_reset_query() 

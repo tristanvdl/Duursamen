@@ -2,8 +2,15 @@
 $(window).scroll(function() {
     if ($(".navbar").offset().top > 50) {
         $(".navbar-fixed-top").addClass("top-nav-collapse");
+        //$(".logoHeader").removeClass('.logoHeader');
+      $(".navbar-brand").removeClass('logoHeader');
+         $(".navbar-brand").addClass('logoHeaderScroll');
+        
     } else {
         $(".navbar-fixed-top").removeClass("top-nav-collapse");
+           $(".navbar-brand").removeClass('logoHeaderScroll');
+       $(".navbar-brand").addClass('logoHeader');
+
     }
 });
 
